@@ -2,32 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Contributing to Open Source Part I: The Easy Way</title>
+    <title>Strange cats</title>
+    <script src="https://kit.fontawesome.com/257aa7ee3e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar">The Navigation Bar</nav>
-    <aside class="aside-video">
-      <section class="recommended"></section>
-    </aside>
+    <nav class="navbar">
+      <img src="menu.png" alt="Navigation Menu" class="dash-menu">
+      <img src="youtube_logo.png" alt="YouTube logo" class="logo">
+      <div class="search">
+        <input type="text" class="searchbar" placeholder="Search">
+        <button class="search-button">
+          <i class="fas fa-search search-icon"></i>
+        </button>
+      </div>
+      <button class="dictation">
+        <i class="fas fa-microphone dictation-icon"></i>
+        <!-- <img src="microphone-solid.svg" alt="Dictation" class="dictation-icon"> -->
+      </button>
+      <div class="right-menu">
+        <img src="grid.png" alt="Other applications" class="grid-menu">
+        <img src="dots-menu.png" alt="Dots menu" class="dots-menu">
+        <div class="sign-in-button">
+          <i class="far fa-user-circle sign-in-icon"></i>
+          <b>SIGN IN</b>
+        </div>
+      </div>
+    </nav>
     <div class="content">
-      <video src="" id="player">The Player</video>
-      <section id="sub-video">
-        <section id="caption">Strange Cats</section>
-        <section id="description"></section>
-        <section id="comments"></section>
-      </section>
+      <aside class="aside-video">
+        <section class="recommended"></section>
+      </aside>
+      <div class="video-content">
+        <video src="" id="player">The Player</video>
+        <section id="sub-video">
+          <section id="caption">Strange cats 🐾</section>
+          <section id="description"></section>
+          <section id="comments"></section>
+        </section>
+      </div>
     </div>
   </body>
 </html>
 <style>
 .navbar {
-  padding: 1ex;
-  margin-bottom: 1ex;
+  padding: 2ex 2ex 2ex 2ex;
   height: 20px;
-  border: solid green;
+  display: flex;
+  align-items: center;
 }
 
 .content {
+  padding-top: 2ex;
+  background-color: #f9f9f9;
+}
+
+.video-content {
   margin-left: 15ex;
   margin-top: 3ex;
   width: 1280px;
@@ -62,5 +91,87 @@
   border: dashed purple;
 }
 
+.dash-menu {
+  margin-top: -1ex;
+}
+
+.logo {
+  margin-top: -1.3ex;
+}
+
+.search {
+  padding-left: 450px;
+  padding-right: 10px;
+  margin-top: -1ex;
+  display: flex;
+  height: 40px;
+}
+
+.searchbar {
+  padding: 2ex;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  border-right: 0;
+  width: 500px;
+  font-size: medium;
+}
+
+.search-button {
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  background-color: #f8f8f8;
+  width: 70px;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+}
+
+i.search-icon {
+  font-size: large;
+  width: 20px;
+  opacity: 0.4;
+}
+
+.dictation {
+  border: 0;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin-top: -1ex;
+  width: 40px;
+  height: 40px;
+}
+
+.dictation-icon {
+  font-size: large;
+}
+
+.right-menu {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-top: -1ex;
+}
+
+.dots-menu {
+  padding-left: 30px;
+  padding-top: 1px;
+  padding-right: 30px;
+}
+
+.sign-in-button {
+  color: #065fd4;
+  font-family: Helvetica;
+  font-size: small;
+  padding: 1.5ex;
+  border: 1px solid #065fd4;
+  display: flex;
+  align-items: center;
+}
+
+i.sign-in-icon {
+  font-size: large;
+  padding-right: 1ex;
+}
 
 </style>
