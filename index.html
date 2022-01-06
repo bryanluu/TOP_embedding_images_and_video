@@ -33,7 +33,7 @@
         <section class="recommended"></section>
       </aside>
       <div class="video-content">
-        <video src="" id="player">The Player</video>
+        <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/j1Oegd_pLUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="sub-video">
           <section id="caption">Strange cats 🐾</section>
           <section id="description"></section>
@@ -52,20 +52,18 @@
 }
 
 .content {
-  padding-top: 2ex;
+  padding-top: 3ex;
   background-color: #f9f9f9;
 }
 
 .video-content {
   margin-left: 15ex;
-  margin-top: 3ex;
   width: 1280px;
 }
 
-#player {
-  width:  1280px;
+.video-player {
+  width: 1280px;
   height: 720px;
-  border: solid blue;
 }
 
 #caption {
@@ -76,7 +74,7 @@
 
 #description {
   height: 170px;
-  border: solid orange;
+  border: solid orange;a
 }
 
 #comments {
