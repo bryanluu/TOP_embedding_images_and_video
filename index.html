@@ -30,7 +30,27 @@
     </nav>
     <div class="content">
       <aside class="aside-video">
-        <section class="recommended"></section>
+        <section class="recommended">
+          <img src="sample1.jpg" alt="Sample video 1" class="recommended-thumbnail">
+          <div class="recommended-caption">
+            <b>How to BOOTSTRAP your YouTube video to reach 1000 subs in 1 day!!!</b>
+            <p class="dark-grey">TBlitzYT<br>230K views · 1 month ago</p>
+          </div>
+        </section>
+        <section class="recommended">
+          <img src="sample2.jpg" alt="Sample video 2" class="recommended-thumbnail">
+          <div class="recommended-caption">
+            <b>Lo-fi music in a rainy alley</b>
+            <p class="dark-grey">Darkstorm<br>150K views · 1 year ago</p>
+          </div>
+        </section>
+        <section class="recommended">
+          <img src="sample3.jpg" alt="Sample video 3" class="recommended-thumbnail">
+          <div class="recommended-caption">
+            <b>Funny Cats of 2020 - Compilation</b>
+            <p class="dark-grey">kittykat137<br>1.4K views · 5 hours ago</p>
+          </div>
+        </section>
       </aside>
       <div class="video-content">
         <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/j1Oegd_pLUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,9 +104,29 @@
 
 .aside-video {
   float: right;
-  width: 460px;
+  width: 480px;
   height: 2000px;
-  border: dashed purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended {
+  display: flex;
+  padding-bottom: 1ex;
+}
+
+.recommended-thumbnail {
+  width: 160px;
+}
+
+.recommended-caption {
+  padding: 1ex;
+  font-family: Arial;
+  font-size: small;
+}
+
+.dark-grey {
+  color: #6f6f6f;
 }
 
 .dash-menu {
