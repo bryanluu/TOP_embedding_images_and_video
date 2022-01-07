@@ -54,7 +54,7 @@
       </aside>
       <div class="video-content">
         <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/j1Oegd_pLUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <section id="sub-video">
+        <section class="sub-video">
           <section class="caption">
             <p>Strange cats 🐾</p>
             <div class="caption-footer">
@@ -63,21 +63,34 @@
             </div>
             <hr>
             <section id="description">
-
+              <img src="keke.jpg" alt="Keke Profile Picture" class="profile-pic">
+              <div class="description-author">
+                <b>kekeflipnote</b>
+                <p class="sub-caption">1.09M subscribers</p>
+                <p>Lots and lots of strange cats!<br>No worries, they are ultra friendly :3<br>Cat is chat in french :D</p>
+                <b class="sub-caption">SHOW MORE</b>
+              </div>
+              <button class="btn-subscribe"><b>SUBSCRIBE</b></button>
             </section>
+            <hr>
           </section>
-          <section id="comments"></section>
         </section>
       </div>
     </div>
   </body>
 </html>
 <style>
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
 .navbar {
-  padding: 2ex 2ex 2ex 2ex;
+  padding: 3ex 2ex 2ex 2ex;
   height: 20px;
   display: flex;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .content {
@@ -117,13 +130,28 @@ hr {
 }
 
 #description {
-  height: 170px;
-  border: solid orange;a
+  padding: 1ex;
+  display: flex;
+  align-items: start;
 }
 
-#comments {
-  height: 1000px;
-  border: dashed gray;
+.profile-pic {
+  border-radius: 50%;
+  padding-right: 1em;
+}
+
+.description-author {
+  font-family: Arial;
+  font-size: 80%;
+}
+
+.btn-subscribe {
+  margin-left: auto;
+  background-color: #cc0000;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 1.5ex 1em 1.5ex 1em;
 }
 
 .aside-video {
