@@ -33,30 +33,39 @@
         <section class="recommended">
           <img src="sample1.jpg" alt="Sample video 1" class="recommended-thumbnail">
           <div class="recommended-caption">
-            <b>How to BOOTSTRAP your YouTube video to reach 1000 subs in 1 day!!!</b>
-            <p class="dark-grey">TBlitzYT<br>230K views · 1 month ago</p>
+            <b>How to reach 1000 subs in 1 day!!!</b>
+            <p class="sub-caption">TBlitzYT<br>230K views · 1 month ago</p>
           </div>
         </section>
         <section class="recommended">
           <img src="sample2.jpg" alt="Sample video 2" class="recommended-thumbnail">
           <div class="recommended-caption">
             <b>Lo-fi music in a rainy alley</b>
-            <p class="dark-grey">Darkstorm<br>150K views · 1 year ago</p>
+            <p class="sub-caption">Darkstorm<br>150K views · 1 year ago</p>
           </div>
         </section>
         <section class="recommended">
           <img src="sample3.jpg" alt="Sample video 3" class="recommended-thumbnail">
           <div class="recommended-caption">
             <b>Funny Cats of 2020 - Compilation</b>
-            <p class="dark-grey">kittykat137<br>1.4K views · 5 hours ago</p>
+            <p class="sub-caption">kittykat137<br>1.4K views · 5 hours ago</p>
           </div>
         </section>
       </aside>
       <div class="video-content">
         <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/j1Oegd_pLUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section id="sub-video">
-          <section id="caption">Strange cats 🐾</section>
-          <section id="description"></section>
+          <section class="caption">
+            <p>Strange cats 🐾</p>
+            <div class="caption-footer">
+              <p class="sub-caption">14,748,303 views · Apr 2, 2021</p>
+              <img class="video-actions" src="actions.png" alt="Video actions">
+            </div>
+            <hr>
+            <section id="description">
+
+            </section>
+          </section>
           <section id="comments"></section>
         </section>
       </div>
@@ -86,10 +95,25 @@
   height: 720px;
 }
 
-#caption {
-  border: dashed blue;
-  border-bottom: 1px solid #e0e0e0;
+.caption {
   height: 85px;
+  font-family: Arial;
+  font-size: large;
+}
+
+.caption-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-actions {
+  margin-top: 2ex;
+  height: 50%;
+}
+
+hr {
+  color: #e0e0e0;
+  opacity: 0.4;
 }
 
 #description {
@@ -117,15 +141,17 @@
 
 .recommended-thumbnail {
   width: 160px;
+  height: 90px;
 }
 
 .recommended-caption {
-  padding: 1ex;
   font-family: Arial;
-  font-size: small;
+  padding: 1ex;
 }
 
-.dark-grey {
+.sub-caption {
+  font-family: Arial;
+  font-size: small;
   color: #6f6f6f;
 }
 
